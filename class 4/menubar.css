@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    background-color: aquamarine;
+    width: 100%;
+    height: 50px;
+
+}
+.first ul li{
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+    padding: 2px;
+}
+.first ul li :hover{
+    color: red;
+    font-size: large;
+    
+}

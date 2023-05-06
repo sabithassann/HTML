@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+    
+}
+nav ul li{
+    list-style-type: none;
+    float: left;
+    margin: 5px 5px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rebeccapurple;
+    font-weight: 600;
+
+}
+nav ul li :hover{
+    background-color: antiquewhite;
+    font-size: large;
+    color: brown;
+}
+#first #fir #first1 :hover{
+    text-decoration: none;
+    color: blue;
+}
+#first #fir #first2 :hover{
+    font-size: 20px;
+}
+#first #fir #first3 :hover{
+    font-size: smaller;
+    color: black;
+}
+
+#second{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    /* margin-left: 500px;
+    margin-top: -19px; */
+    float: left;
+    margin-top: 0;
+    
+    
+
+}
+#third{
+    height: 300px;
+    width: 300px;
+    background-color: chartreuse;
+    /* margin-left: 0px;
+    margin-top: -300px;
+    position: fixed; */
+    float: left;
+    margin-left: 50px;
+    margin-top: 0px;
+    
+}
+#forth{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    /* margin-right: 200px; */
+    /* margin-left: 900px ;
+    margin-top: -300px; */
+    
+    margin-left: 714px;
+    margin-top: 0px;
+
+}

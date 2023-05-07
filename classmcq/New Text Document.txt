@@ -1,0 +1,167 @@
+HTML TEST 01
+Total points
+20/30
+ 
+JEE-CCSL-55
+Email
+*
+sabithassan06@gmail.com
+ 
+1.      Choose the correct HTML tag for the largest heading 
+
+*
+2/2
+a. <h1>
+ 
+b. <h2>
+c. <h5>
+d. <h7>
+ 
+1.      Which of the following is not CSS text-align property?
+
+*
+2/2
+a. Left
+b. Right
+c. Middle
+ 
+d. justify
+ 
+1.      Which of the class name is not valid?
+
+0/2
+a. Project99
+b. 99project
+c. Project_99
+d. Project-99
+ 
+Correct answer
+b. 99project
+ 
+1.       Which is veiled HTML 5 doctype
+
+*
+2/2
+a. <DOCTYPE html>
+b. <doctype html>
+c. <DOCTYPE html />
+d. <!DOCTYPE html>
+ 
+ 
+1.       #class is used for
+
+*
+2/2
+a. id
+ 
+b. class
+c. tag
+d. none of these
+ 
+1.       Which one is attributes of anchor(a) tag
+
+*
+2/2
+a. align
+b. title
+ 
+c. width
+d. height
+ 
+1.       .class is used for 
+
+*
+2/2
+a. id
+b. class
+ 
+c. tag
+d. none of these
+ 
+1.      onmousemove use for—
+
+*
+2/2
+a. User hold the mouse button down
+b. User releases the mouse button
+c. User moves the mouse button
+d. User moves the mouse cursor
+ 
+ 
+1.       Which is HTML comment code 
+
+*
+0/2
+a. <-- this is a comment-->
+b. <!--This is a comment --! >
+ 
+c. <!--This is a comment -- >
+d. <--!This is a comment --! >
+Correct answer
+c. <!--This is a comment -- >
+ 
+1.      What does HTML stand for? 
+
+*
+2/2
+a. Hyper Text Markup Language
+ 
+b. Home Tool Markup Language
+c. Home Tool Markup Language
+ 
+Use all lower case for code, it is ….
+
+*
+2/2
+a. True
+ 
+b. False
+Name
+Md. Sabit Hassan
+ 
+1.       Title element is includes on which section?
+
+*
+2/2
+a. body
+b. head
+ 
+c. meta
+d. style
+ 
+1.       DOCTYPE declaration is useful for–
+
+*
+0/2
+a. interoperability
+b. debugging
+c. searching
+d. all
+ 
+Correct answer
+a. interoperability
+ 
+Which is not a new feature of HTML 5?
+
+*
+0/2
+a. Drag and Drop
+b. Microdata
+c. Strong
+ 
+d. Web workers
+Correct answer
+a. Drag and Drop
+ 
+1.      Id may be repeated within the same page----- 
+
+*
+0/2
+a. Yes
+b. No
+ 
+Correct answer
+a. Yes
+ID
+*
+1273983

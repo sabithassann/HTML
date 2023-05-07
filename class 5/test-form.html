@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 5px;
+            /* background-color: bisque; */
+        }
+        legend{
+            text-align: center;
+            font-size: 16px;
+
+        
+        }
+        body {
+            background-image: url("images.jpg");
+            background-repeat: no-repeat;
+       }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="#">
+    <pre>
+        <fieldset>
+            <legend>Student Reg form</legend>
+
+        <label>Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email" required="required">
+    
+        <label>Cell NO</label>
+        <input type="text">
+       
+        <label>Gender</label>
+        <input type="radio" name="gender"><label>Male</label>
+        <input type="radio" name="gender"><label>Female</label>
+        <!-- if you input name=gender1,gender2 or gender3 you can select all 3...so use same name -->
+        <input type="radio" name="gender"><label>Other</label>
+
+
+        <label>Hobby</label>
+        <input type="checkbox"><label>Gardening</label>
+        <input type="checkbox"><label>Traveling</label>
+        <input type="checkbox"><label>Fishing</label>
+        <input type="checkbox"><label>Reading</label>
+
+        <label>Subject</label>
+        <select>
+            <option>--Select One--</option>
+            <option>DDD</option>
+            <option>C#</option>
+            <option>PHP</option>
+            <option>Networking</option>
+        </select>
+        <label>About you</label>
+        <textarea cols="30" rows="10">
+
+        </textarea>
+         <input type="submit">
+         <button>Submit</button>
+    </fieldset>
+    </pre>
+
+
+    </form>
+
+
+</body>
+
+</html>

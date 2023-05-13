@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 10px;
+            padding: 2px;
+            background-color:#e5eaf5;
+            
+        }
+        #inputfile{
+            background-color: #82716e;
+        }
+        #btton{
+            background-color:  #ff8928;
+            width: 300px;
+            /* width: 100%; */
+        }
+        #File{
+            background-color:  #fea49f;
+        }
+        #name{
+            color: rgb(26, 129, 43);
+            /* background-color: aqua; */
+        }
+        #reset{
+            background-color: rgb(98, 201, 128);
+            width: 300px;
+            /* width: 100%; */
+            /* text-align: right; */
+        }
+        /* #btton :hover{
+            /* background-color: rgb(34, 136, 9); */
+         /* .next{
+            text-align: left;
+         }
+         .previous{
+            text-align: right;
+         } 
+         /* .next{
+            text-align: right;
+         } */
+         .previous{
+            text-align: center;
+            
+            
+         }
+         /* .previous #btton{
+            text-align: left;
+         } */
+    </style>
+</head>
+<body>
+    <form action="#" role="form">
+        <div class="form-group">
+            <label for="name" id="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name">
+
+        </div>
+        <div class="form-group">
+            <label for="inputfile" id="File">File input</label>
+            <input type="file" id="inputfile">
+            <p class="help-block">Example block-level help text here</p>
+
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">
+
+            </label>
+            
+
+        </div>
+        <!-- <div class="form-group"> -->
+        <!-- <div class="next"> -->
+        <div class="previous">
+        <button type="submit" class="btn btn-default" id="btton">Submit</button>
+        <!-- </div> -->
+        <!-- <div class="previous"> -->
+        <button type="reset" class="btn btn-default" id="reset" class="next">Reset</button>
+        </div>
+
+
+        <!-- sir test -->
+
+        <!-- <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+
+            </div>
+
+        </div>
+    </div> -->
+    </form>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

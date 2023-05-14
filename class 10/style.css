@@ -1,0 +1,19 @@
+nav ul li{
+    float: left;
+    margin: 5px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav{
+    height: 30px;
+    width: 100%;                 /* got problem in this  */
+    background-color: aquamarine;
+}
+
+nav ul li a:hover{
+    color: blue;
+    font-size: large;
+    background-color: azure;
+}

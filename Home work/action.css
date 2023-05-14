@@ -1,0 +1,25 @@
+h1{
+    background-color: burlywood;
+}
+
+nav ul li{
+    float: left;
+    margin: 8px;
+    list-style-type: none;
+    
+    
+}
+nav{
+    height: 30px;
+    width: 100%;
+    background-color: aquamarine;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: azure;
+    padding: 8px;
+    color: brown;
+}
+

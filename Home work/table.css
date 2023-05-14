@@ -1,0 +1,40 @@
+.first{
+    text-align: left;
+}
+.second{
+    text-align: center;
+}
+.third{
+    text-align: center;
+}
+.four{
+    text-align: right;
+}
+h4{
+    text-align: center;
+    color: red;
+}
+.position{
+    position: fixed;
+}
+
+nav ul li{
+    float: left;
+    margin: 8px;
+    list-style-type: none;
+    
+    
+}
+nav{
+    height: 30px;
+    width: 100%;
+    background-color: aquamarine;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: azure;
+    padding: 8px;
+    color: brown;
+}

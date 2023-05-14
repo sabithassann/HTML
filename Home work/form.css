@@ -1,0 +1,40 @@
+legend{
+    text-align: center;
+    color: red;
+}
+button{
+    background-color: aquamarine;
+}
+button:hover{
+    background-color: blueviolet;
+}
+nav ul li{
+    float: left;
+    margin: 8px;
+    list-style-type: none;
+    
+    
+}
+nav{
+    height: 30px;
+    width: 100%;
+    background-color: aquamarine;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: azure;
+    padding: 8px;
+    color: brown;
+}
+h1{
+    background-color: rgb(175, 208, 208);
+    
+    width: 50%;
+    text-align: center;
+    color: rgb(147, 19, 211);
+    padding: 30px;
+    
+
+}

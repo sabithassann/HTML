@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label>first</label>
+<br>
+<input type="number" id="number1">
+<label>second</label>
+<input type="number" id="number2"> -->
+
+<!-- <script>
+  function sum() {
+    let number1 = document.getElementById("number1").value;
+    let number2 = document.getElementById("number2").value;
+    let result = parseInt(number1) + parseInt(number2);
+    document.getElementById("result").innerHTML = result;
+  } -->
+
+
+
+
+
+  <!-- 2nd way -->
+  <label>First:</label>
+<br>
+<input type="number" id="number1">
+<br>
+<label>Second:</label>
+<input type="number" id="number2">
+<br>
+<button onclick="multiply()">submit</button> <!-- for sum use sum() -->
+<br>
+<br>
+<label>Your result is:</label>
+<span id="result1"></span>
+
+
+<script>
+  function multiply() {     //function multiply()
+    let number1 = document.getElementById("number1").value;
+    let number2 = document.getElementById("number2").value;  // In JavaScript, the value property of an input element always returns a string.
+    // let result = parseInt(number1) + parseInt(number2);
+    let showResult = Number(number1) * Number(number2);  // parseInt("20") and Number("20") convert the string "20" to the number 20.   //for sum change * to +
+
+    
+
+    
+
+    document.getElementById("result1").textContent =showResult;
+  }
+
+  let anotherNumber = Number("20"); // Parsing "20" as a number
+console.log(typeof anotherNumber); // Output: number
+
+
+let number = parseInt("20"); // Parsing "20" as an integer    
+console.log(typeof number); // Output: number
+</script>
+
+<!-- end 2nd way -->
+
+
+
+
+<!-- 3rd way -->
+<!-- <label>First:</label>
+<br>
+<input type="number" id="number1">
+<br>
+<label>Second:</label>
+<input type="number" id="number2">
+<br>
+<button onclick="sum()">Calculate Sum</button>
+
+<script>
+  function sum() {
+    let number1 = document.getElementById("number1").value;
+    let number2 = document.getElementById("number2").value;
+    let result = parseInt(number1) + parseInt(number2);
+    alert("The sum is: " + result);
+  }
+</script> -->
+ 
+<!-- end 3rd way -->
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- <input type="button" value="Change Color" onClick="document.bgColor='red'" onMouseOver="document.bgColor='black'"
+    onMouseLeave="document.bgColor='blue'"> -->
+
+    <label >First number</label>
+    <input type="number" id="number1">
+    <br>
+    <label >Second number</label>
+    <input type="number" id="number2">
+<br>
+    <input type="button" id="btnResult" value="Result" onclick="sum()">
+    <P id="result"></P>
+    
+    <script>
+    
+
+        function sum(){
+            let number1=document.getElementById("number1").value;
+            let number2=document.getElementById("number2").value;
+       
+             let n1=parseInt(number1);
+             let n2=parseInt(number2);
+             let res=n1+n2;
+        //    console.log(res);
+           document.getElementById("result").textContent=res;
+        }
+    
+        let name="hello Sir's \n How r u?";
+        document.write(name);
+       
+    
+    
+    </script>
+ 
+</body>
+</html>

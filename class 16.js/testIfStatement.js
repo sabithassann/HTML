@@ -54,13 +54,13 @@
 
 // for(let i=1; i<=20; i++)
 //     if(i%3==0){
-        // console.log("True");
-        // console.log(i);
+//         // console.log("True");
+//         console.log(i);
 
-    // }
-    // else{
-    //     // console.log("False");
-    //     console.log(i);
+//     }
+//     else{
+//         // console.log("False");
+//         console.log(i);
 
 
     // }
@@ -77,14 +77,14 @@
 
     //     }
 
-    let input=23;
-    let result=1;
-        for(let i=input; i>0; i--){
-            result=result*i;
-            // result*=i;
+    // let input=23;
+    // let result=1;
+    //     for(let i=input; i>0; i--){
+    //         result=result*i;
+    //         // result*=i;
             
-        }
-        console.log(result);
+    //     }
+    //     console.log(result);
 
 
        

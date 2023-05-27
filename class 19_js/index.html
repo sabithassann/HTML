@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>name</label>
+    <input type="text" id="name" oninput="nameValidation()">
+    <p id="nameValidation" style="color: red; font-weight: 300;"></p>
+    <input type="button" value="show" onclick="showResults()" id="btnOk">
+    <br>
+    <br>
+    <textarea id="showText"></textarea>
+    <!-- <p id="showText"></p> -->
+
+    <script>
+// let name=document.getElementById("name").value;
+
+
+
+function showResults(){
+    let btnOk=document.getElementById("btnOk");
+    let showResult=document.getElementById("name").value;
+    document.getElementById("showText").innerHTML="Welcome "+ showResult;
+}
+
+function nameValidation(){
+    
+    let showResult=document.getElementById("name").value;
+    if(showResult.length>=3 && showResult.length<=10){
+        document.getElementById("nameValidation").innerHTML="Good";
+        document.getElementById("nameValidation").style.color="green";
+        document.getElementById("btnOk").style.visibility="visible";
+
+    }else{
+document.getElementById("nameValidation").innerHTML="Name must be between 3 to 10 charecter";
+document.getElementById("nameValidation").style.color="red";
+document.getElementById("btnOk").style.visibility="Hidden";
+    }
+
+}
+    </script>
+
+
+
+    <!-- <body>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <input type="button" value="Show" onclick="showresult()" id="btnOk">
+        <p id="showText"></p>
+
+
+    
+        <script>
+
+                
+            function showresult() {
+                let name = document.getElementById("name").value;
+                let showResult = document.getElementById("showText");
+                showResult.textContent = name;
+            }
+        </script>
+    </body> -->
+
+    
+    
+</body>
+</html>

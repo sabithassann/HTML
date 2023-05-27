@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>n1</label>
+    <input type="number" id="firstValue">
+    <label>n2</label>
+    <input type="number" id="secondValue">
+    <br>
+    <br>
+    <input type="button" value="+" onclick="plus()" id="plus"> 
+    <input type="button" value="-" onclick="minus()" id="minus">
+    <input type="button" value="x" onclick="multiply()" id="multiply">
+    <input type="button" value="/" onclick="vag()" id="vag">
+    <br>
+    <br>
+    <textarea id="showResult" cols="5" rows="4"></textarea>
+
+    <!-- <script>
+
+        //worng in ()
+        
+        function plus{     
+
+        
+        
+        let firstValue=document.getElementById("firstValue").value;
+        let secondValue=document.getElementById("secondValue").value;
+        let show = parseInt(firstValue) + parseInt(secondValue);
+        document.getElementById("showResult").innerHTML= show;
+        } -->
+
+        <script>
+            // function plus() {
+            //     let firstValue = document.getElementById("firstValue").value;
+            //     let secondValue = document.getElementById("secondValue").value;
+            //     let show = parseInt(firstValue) + parseInt(secondValue);
+            //     document.getElementById("showResult").innerHTML = show;
+            // }
+
+            function plus(){     
+
+        
+        
+           let firstValue=document.getElementById("firstValue").value;
+           let secondValue=document.getElementById("secondValue").value;
+           let show =parseInt(firstValue) + parseInt(secondValue);
+           document.getElementById("showResult").innerHTML= show;
+       }
+
+
+            
+
+            function minus() {
+                let firstValue = document.getElementById("firstValue").value;
+                let secondValue = document.getElementById("secondValue").value;
+                let show = parseInt(firstValue) - parseInt(secondValue);
+                document.getElementById("showResult").innerHTML = show;
+            }
+
+            function multiply() {
+                let firstValue = document.getElementById("firstValue").value;
+                let secondValue = document.getElementById("secondValue").value;
+                let show = parseInt(firstValue) * parseInt(secondValue);
+                document.getElementById("showResult").innerHTML = show;
+            }
+
+            function vag() {
+                let firstValue = document.getElementById("firstValue").value;
+                let secondValue = document.getElementById("secondValue").value;
+                let show = parseInt(firstValue) / parseInt(secondValue);
+                document.getElementById("showResult").innerHTML = show;
+            }
+
+
+        </script>
+
+        
+    </script>
+</body>
+</html>

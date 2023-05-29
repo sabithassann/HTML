@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <label>n1</label>
+    <textarea id="first" cols="3" rows="1"></textarea>
+    <label>n2</label>
+    <textarea id="second" cols="3" rows="1"></textarea>
+    <br>
+    <input type="button" value="max no" id="max" onclick="button()">
+    <input type="button" value="min no" id="min" onclick="next_button()">
+    <p id="show"></p>
+
+    
+
+
+    <script>
+        let first=20;
+        let second=30;
+        function button(){
+
+        
+        if(first>second || second>first){
+            
+            let value=document.getElementById("first").value;
+
+            document.getElementById("show").innerHTML=value;
+
+
+
+
+        }
+        // else{
+        //     let value2=document.getElementById("second").value;
+        //     document.getElementById("show").innerHTML=value2;
+        // }
+    }
+
+    function next_button(){
+        if(second>first || first<second){
+
+            let valueNext=document.getElementById("second").value;
+
+            document.getElementById("show").innerHTML=valueNext;
+
+
+        }
+
+    }
+    </script>
+</body>
+</html>

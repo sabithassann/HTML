@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        
+        let sum = 0;
+for (let i = 1; i <= 50; i++) {
+  if (i!=7 && i!=15 && i!=23) {
+    sum += i;
+  }
+}
+console.log("The sum is: " + sum);
+
+
+    </script> -->
+
+    <script>
+
+
+
+        let sum=0;
+    for(let i=1; i<=50; i++){
+        if(i==7 || i==15 || i==23 || i%2!=0){
+            
+            continue;
+        }
+        
+        document.write("<span>" +i+"</span> <br>")
+        sum +=i;
+
+        
+    }
+    // document.write("<span>Last sum number: " + sum + "</span>");
+console.log(sum);
+    </script>
+</body>
+</html>

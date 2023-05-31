@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .news-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #100303;
+  color: #fff;
+  padding: 2px;
+}
+
+.headline-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(250, 245, 238);
+  margin-right: 10px;
+}
+
+.headline-news {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 18s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+    </style>
+</head>
+<body>
+  <div class="news-headline">
+    <span class="headline-text">Breaking News:</span>
+    <marquee behavior="scroll" direction="left">
+      <span class="headline-news">ISDB-বিশ্ব আইটি স্কলারশিপ প্রোগ্রাম রাউন্ড ৫৭ এর  আবেদনের শেষ তারিখ: ৩০ জুন ২০২৩।</span>
+    </marquee>
+  </div>
+  
+           
+      
+</body>
+</html>

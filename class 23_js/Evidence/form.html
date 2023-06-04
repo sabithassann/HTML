@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+    <form action="form_result.html">
+        <label>Name</label>
+        <input type="text" id="name"><br><br>
+        <label>Email</label>
+        <input type="text" id="email"><br><br>
+        <label>password</label>
+        <input type="password" id="password"><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Others">Others <br><br>
+        <input type="submit" value="submit" onclick="dataTransfer()">
+    </form>
+</pre>
+    <script>
+
+        function dataTransfer(){
+        const name=document.getElementById("name").value;
+        const email=document.getElementById("email").value;
+        const password=document.getElementById("password").value;
+
+
+        localStorage.setItem("name",name);
+        localStorage.setItem("email",email);
+        localStorage.setItem("password",password);
+    }
+    </script>
+
+
+    <!-- <form action="form_result.html">
+        <label>Name</label>
+        <input type="text" id="name"><br><br>
+        <label>Email</label>
+        <input type="text" id="email"><br><br>
+        <label>Password</label>
+        <input type="password" id="password"><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Others">Others <br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            localStorage.setItem("st_name", name);
+            localStorage.setItem("st_email", email);
+            localStorage.setItem("st_password", password);
+
+            // Submit the form
+            this.submit();
+        }); -->
+    </script>
+
+
+
+</body>
+
+</html>

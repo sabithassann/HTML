@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let n=prompt("Please Enter Your Number");
+        let max=0;
+        let min=999999999;
+        let total=0;
+        
+
+        for(let i=1; i<=n; i++){ 
+           let input= prompt("Please Enter Your Number "+ i);
+            total +=parseInt(input);
+
+            if(max<input){
+                max=input;
+            }        
+            
+            if(min>input){ 
+                min=input;
+            }                       
+        }
+    
+        
+        alert("Max no is "+min+" Min is "+ max);
+    </script>
+</body>
+</html>

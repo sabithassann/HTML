@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Control</title>
+</head>
+<body bgcolor="white">
+    <center>
+        <h2>Window Control</h2>
+        <button type="button" name="openBut" onclick="openWindow()">Click to Open New Window</button>
+        <br>
+        <button type="button" name="shrinkBut" onclick="shrink()">Click to change relative size</button>
+        <br>
+        <button type="button" name="shrivelBut" onclick="shrivel()">Click to change absolute size</button>
+    </center>
+
+    <script>
+        function openWindow() {
+            var features = 'width=200,height=150';
+            window.open("sanpWin.html", "sampWin1", features);
+        }
+
+        function shrink() {
+            window.resizeBy(-15, -10);
+        }
+
+        function shrivel() {
+            window.resizeTo(400, 300);
+        }
+    </script>
+</body>
+</html>

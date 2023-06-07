@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_3</title>
+</head>
+<body>
+    
+    <!-- <script>
+        let n=prompt("Please Enter Your Number");
+        let max=0;
+        let min=999999999;
+        let total=0;
+        
+
+        for(let i=1; i<=n; i++){ 
+           let input= prompt("Please Enter Your Number "+ i);
+            total +=parseInt(input);
+
+            if(max<input){
+                max=input;
+            }        
+            
+            if(min>input){ 
+                min=input;
+            }                       
+        }
+    
+        
+        alert("Max no is "+min+" Min is "+ max);
+    </script> -->
+
+    <script>
+        let number1=parseInt(prompt("Enter first Number"));
+        let number2=parseInt(prompt("Enter second Number"));
+        let number3=parseInt(prompt("Enter third Number"));
+        let max=Infinity;
+        let min=Infinity;
+
+        if(number1> number2 && number1>number3){
+            max=number1
+
+        }
+        else if(number2>number1 && number2>number3){
+            max=number2
+
+        }
+        else{
+            max=number3;
+
+        }
+        if(number1< number2 && number1<number3){
+            min=number1
+
+        }
+        else if(number2<number1 && number2<number3){
+            min=number2
+
+        }
+        else{
+            min=number3;
+        }
+
+        alert("max number is"+max+" min number is"+min);
+    </script>
+</body>
+</html>

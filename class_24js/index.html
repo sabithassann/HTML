@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <form action="result.html">
+            <label>Name</label>
+            <input type="text" id="name">
+            <label>Email</label>
+            <input type="email" id="email">
+            <label>Password</label>
+            <input type="password" id="password">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" >Male
+            <input type="radio" name="gender" value="male" >Female
+            <input type="radio" name="gender" value="male">Others
+            <input type="submit" value="submit" onclick="showResult()">
+
+
+            <script>
+                function showResult(){
+
+                const name=document.getElementById("name").value;
+                const email=document.getElementById("email").value;
+                const password=document.getElementById("password").value;
+                // const gender=document.getElementById("gender").value;
+
+                localStorage.setItem("s_name",name);
+                localStorage.setItem("s_email",email);
+                localStorage.setItem("s_password",password);
+            }
+            </script>
+        </form>
+    </pre>
+</body>
+</html>

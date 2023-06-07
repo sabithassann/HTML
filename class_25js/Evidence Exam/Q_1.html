@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_1</title>
+</head>
+<body>
+    <!-- <label>Number</label><br>
+    <input type="number" id="number"><br>
+    <button onclick="check()">check</button>
+    <script>
+
+        function check(){
+       let number=document.getElementById("number").value;
+       let count=0;
+
+       for(let i =1; i<=number; i++){
+        if(number%i==0){
+            count=count+1;
+        }
+       }
+
+       if(count==2){
+        alert("prime Number");
+       }
+       else{
+        alert("Not prime number")
+       }
+
+
+}
+
+    </script> -->
+
+    <script>
+        let startNumber=parseInt(prompt("Enter your starting point"));
+        let endNumber=parseInt(prompt("Enter your starting point"));
+        for(i=startNumber;i<=endNumber;i++){
+            let count=0;
+            for(let p=1;p<=i;p++){
+                if(i%p==0){
+                    count +=1;
+                }
+                
+            }
+            if(count==2){
+                document.write(i+"<br>")
+            }
+        }
+    </script>
+</body>
+</html>

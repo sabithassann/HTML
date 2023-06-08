@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            color: red;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre>
+        <form action="form_result(1).html" onsubmit="return dataTransfer()">
+        <label for="">Name</label>
+        <input type="text" id="name">
+        <span id="sName" ></span>
+
+        <label for="">Email</label>
+        <input type="text" id="email">
+        <span id="sEmail" ></span>
+
+        <label for="">Password</label>
+        <input type="password" id="password">
+        <span id="sPassword"></span>
+
+        <label for="">Gender</label>
+        <input type="radio" name="gender" id="male" > Male
+        <input type="radio" name="gender" id="female"> Female
+        <input type="radio" name="gender" id="other"> other
+        <span id="sGender"></span>
+
+        <label for="">Subject</label>
+        <select name="" id="subject">
+            <option >--Select One--</option>
+            <option >JEE</option>
+            <option >HTML</option>
+            <option >CSS</option>
+            <option >JS</option>
+        </select>
+
+        <label for="">Hobby</label>
+        <input type="checkbox" value="Playing">Playing
+        <input type="checkbox" value="Gardening">Gardening
+        <input type="checkbox" value="Reading">Reading
+        <input type="checkbox" value="Swimming">Swimming
+
+        <label for="">About</label>
+        <textarea  id="about" cols="30" rows="10"></textarea>
+
+       
+
+        <input type="submit" value="submit" >
+
+    </form>
+    </pre>
+
+    <script>
+        function dataTransfer() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const about = document.getElementById("about").value;
+            const regEx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            const passRegEx=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;
+
+            let gender;
+
+            if (document.getElementById('male').checked) {
+                gender = "Male";
+            }
+            else if (document.getElementById('female').checked) {
+                gender = "Female";
+            }
+            else if (document.getElementById('other').checked) {
+                gender = "Other";
+            }
+
+            let sub = document.getElementById("subject");
+            let subject = sub.options[sub.selectedIndex].text;
+
+            let hobby = [];
+            let ho = document.querySelectorAll('input[type=checkbox]:checked');
+
+            //ho=["gardening","Playing", "Swimming"];
+
+            for (let i = 0; i < ho.length; i++) {
+                hobby.push(ho[i].value);
+            }
+            let s_hobby = hobby.toString();
+
+            // validation start
+
+            if (name.length < 3 || name.length >= 20) {
+                document.getElementById("sName").innerHTML = "Name must be between 3 to 20 character";
+                return false;
+            }
+
+            if(!(regEx.test(email))){
+                document.getElementById("sEmail").innerHTML = "invalid Email";
+                return false;
+            }
+
+            // if(!(passRegEx.test(password))){
+            //     document.getElementById("sPassword").innerHTML = "At least 1 uuper, lower character 1 symbol and 1 number";
+            //     return false;
+            // }
+
+            if (password.length <= 8 || password.length >= 20) {
+                document.getElementById("sPassword").innerHTML = "Password must be between 8 to 20 character";
+                return false;
+            }
+
+            if(document.getElementById("male")!=checked && document.getElementById("female")!=checked && document.getElementById("other")!=checked ){
+
+                document.getElementById("sGender").innerHTML = "Gender must selecet";
+                return false;
+            }
+            
+
+            
+
+
+
+            localStorage.setItem("s_name", name);
+            localStorage.setItem("s_email", email);
+            localStorage.setItem("s_password", password);
+            localStorage.setItem("s_gender", gender);
+            localStorage.setItem("s_subject", subject);
+            localStorage.setItem("s_hobby", s_hobby);
+            localStorage.setItem("s_about", about);
+
+
+        }
+    </script>
+
+</body>
+
+</html>

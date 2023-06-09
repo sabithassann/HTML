@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_6Fibonaci</title>
+</head>
+
+<body>
+    <script>
+        let number1=0;
+        let number2=1;
+        let sum=0;
+        // document.write("<p>"+number1+"</p>");
+        // document.write("<p>"+number2+"</p>");
+        let number=parseInt(prompt("Please Enter Your Fibonaci Number"));
+        if(isNaN(number)){
+           alert("Please Enter Valid Number");
+        }
+        else{
+            document.write("<p>"+number1+"</p>");
+            document.write("<p>"+number2+"</p>");
+            for(let i=3;i<=number;i++){
+
+                sum=number1+number2;
+                document.write("<p>"+sum+"</p>");
+                number1=number2;
+                number2=sum;
+            }
+        }
+         
+           
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_10</title>
+</head>
+<body>
+    <pre>
+    <span>Price</span>
+    <input type="number" id="price"><br>
+    <span>Discount percentage</span>
+    <input type="number" id="discount"><br>
+    <input type="button" value="calculate" onclick="afterDiscount()"><br>
+    <span id="afterDiscountPrice"></span>
+    
+    <script>
+        function afterDiscount(){
+            let priceVar = Number(document.getElementById("price").value);
+            let discountVar = Number(document.getElementById("discount").value);
+
+            let result = priceVar - (priceVar * (discountVar / 100));
+
+            document.getElementById("afterDiscountPrice").innerHTML="After Discount "+"<b>"+result;
+        }
+    </script>
+</pre>
+</body>
+</html>

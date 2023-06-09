@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_4_SetRange_NotPrime</title>
+</head>
+<body>
+    <script>
+    let numberFirst = parseInt(prompt("Please Enter First Number"));
+    let numberLast = parseInt(prompt("Please Enter Last Number"));
+    
+    if (isNaN(numberFirst) || isNaN(numberLast)) {
+        alert("Please Enter Valid Number");
+    }
+    else {
+
+        for (let number = numberFirst; number <= numberLast; number++) {
+            let isPrimeNumber = true;
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    isPrimeNumber = false;
+                    break;
+                }
+            }
+            if (!isPrimeNumber && number>1) {   //"!" to show/make true to false
+                document.write(number + " " + "is a Notprime Number" + "<br>");
+            }
+        }
+        
+    }
+</script>
+</body>
+</html>

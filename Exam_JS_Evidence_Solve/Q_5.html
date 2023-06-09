@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_5Factorial</title>
+</head>
+<body>
+    <span>Input Factorial Number</span><br><br>
+    <input type="number" id="inputNumber"><br><br>
+    <input type="button" value="Check" onclick="checkNumber()">
+    <span id="show"></span>
+    
+    <script>
+        // let number=document.getElementByIdparseInt(("input_Number")).value;
+        function checkNumber(){
+
+            let number=parseInt(document.getElementById("inputNumber").value);
+
+            if(isNaN(number)){
+                alert("Please Enter a Valid Number")
+
+            }
+            else{
+                let result=1;
+                for(let i=number;i>=1;i--){
+                    result*=i; //multiplies the result variable by the current value of i
+                    document.getElementById("show").innerHTML=" the factorial number of "+number+"is "+result;
+
+                }
+                
+
+            }
+        }
+    </script>
+</body>
+</html>

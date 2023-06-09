@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="show"></span>
+    <script>
+        var number=parseInt(prompt("Enter your Number"));
+
+        if(isNaN(number)){
+            alert("please enter a valid number");
+            
+            
+        }
+        else{
+            var output=[];
+            for(i=1;i<=10;i++){
+                
+               var result=number*i;
+               output += number + " * " + i + " = " + result + "<br>";
+                // document.getElementById("show").innerHTML=(number + " * " + i + " = " + result+"<br>");
+                document.getElementById("show").innerHTML = output;
+            }
+            // document.getElementById("show").innerHTML=(number + " * " + i + " = " + result+"<br>");
+            // document.getElementById("show").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

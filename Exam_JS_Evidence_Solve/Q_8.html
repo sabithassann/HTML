@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_8XpowerN</title>
+</head>
+<body>
+    <pre>
+    <span>Value of &nbsp;<strong>X</strong></span>
+    <input type="number" id="number1"><br>
+    <span>Value of &nbsp;<strong>N</strong></span>
+    <input type="number" id="number2"><br>
+    <input type="button" value="Check" onclick="checkResult()">
+    </pre>
+
+    <script>
+        function checkResult(){
+            let valueX=parseInt(document.getElementById("number1").value);
+            let valueN=parseInt(document.getElementById("number2").value);
+            
+            let result=Math.pow(valueX,valueN);
+            alert("your result is "+result);
+        }
+    </script>
+</body>
+</html>

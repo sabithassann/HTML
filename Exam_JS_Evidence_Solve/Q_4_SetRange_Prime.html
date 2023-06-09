@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q_4_SetRange_Prime</title>
+</head>
+
+<body>
+    <script>
+
+        let numberFirst = parseInt(prompt("Please Enter First Number"));
+        let numberLast = parseInt(prompt("Please Enter Last Number"));
+       
+        if (isNaN(numberFirst) || isNaN(numberLast)) {
+            alert("Please Enter Valid Number");
+        }
+        else {
+
+            for (let number = numberFirst; number <= numberLast; number++) {
+                let isPrimeNumber = true;
+                for (let i = 2; i < number; i++) {
+                    if (number % i == 0) {
+                        isPrimeNumber = false;
+                        break
+                    }
+                }
+                if (isPrimeNumber && number>1) {
+                    document.write(number + " " + "is a prime Number" + "<br>");
+                }
+            }
+        }
+
+
+        // for (let number = numberFirst; number <= numberLast; number++) {  // Loop from numberFirst to numberLast (inclusive)
+        //     let isPrimeNumber = true;  // Assume the current number is prime initially
+
+        //     for (let i = 2; i < number; i++) {  // Loop from 2 to number - 1
+        //         if (number % i == 0) {  // Check if number is divisible evenly by i
+        //             isPrimeNumber = false;  // If divisible, set isPrimeNumber to false
+        //             break;  // Exit the inner loop
+        //         }
+        //     }
+
+        //     if (isPrimeNumber && number > 1) {  // Check if the number is prime and greater than 1
+        //         document.write(number + " is a prime Number" + "<br>");  // Display the number as prime on the webpage
+        //     }
+        // }
+
+
+
+    </script>
+    <!-- <script>
+        let numberFirst = parseInt(prompt("Please Enter First Number"));
+        let numberLast = parseInt(prompt("Please Enter Last Number"));
+    
+        if (isNaN(numberFirst) || isNaN(numberLast)) {
+            console.log("Please Enter Valid Numbers");
+        } else {
+            if (numberFirst < 2) {
+                numberFirst = 2;
+            }
+    
+            for (let number = numberFirst; number <= numberLast; number++) {
+                let isPrime = true;
+    
+                for (let i = 2; i <= Math.sqrt(number); i++) {
+                    if (number % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+    
+                if (isPrime) {
+                    console.log(number + " is a Prime Number");
+                }
+            }
+        }
+    </script>
+     -->
+</body>
+
+</html>

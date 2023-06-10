@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <span>Price</span>
+        <input type="number" id="price"><br>
+        <span>Discount</span>
+        <input type="number" id="discount"><br>
+        <span>Payable Amount</span>
+        <input type="number" id="payableAmount"><br>
+        <span>Unit Price</span>
+        <input type="number" id="unitprice"><br>
+        <span>Quantity</span>
+        <input type="number" id="quantity" oninput="calculateUnitPrice()"><br>
+        <input type="button" value="Check" onclick="checkAmount()">
+    </pre>
+    
+    <script>
+        function checkAmount() {
+            let price = Number(document.getElementById("price").value);
+            let discount = 0;
+            
+            if (price <= 500) {
+                discount = 5;
+            } else if (price <= 1000) {
+                discount = 7;
+            } else {
+                discount = 7.5;
+            }
+            
+            let payableAmount = price - (price * discount / 100);
+            let unitPrice = Number(document.getElementById("unitprice").value);
+            let quantity = Number(document.getElementById("quantity").value);
+            let unitResult = unitPrice * quantity;
+            
+            document.getElementById("discount").value = discount;
+            document.getElementById("payableAmount").value = payableAmount;
+            document.getElementById("unitprice").value = unitPrice;
+            document.getElementById("quantity").value = quantity;
+        }
+        
+        function calculateUnitPrice() {
+            let price = Number(document.getElementById("price").value);
+            let quantity = Number(document.getElementById("quantity").value);
+            let unitPrice = price * quantity;
+            
+            document.getElementById("unitprice").value = unitPrice;
+        }
+    </script>
+    
+    
+    
+</body>
+</html>

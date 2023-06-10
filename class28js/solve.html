@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <pre>
+    <span>Price</span>
+    <input type="number" id="price"><br>
+    <span>Discount</span>
+    <input type="number" id="discount"><br>
+    <span>Payable Amount</span>
+    <input type="number" id="payableAmount"><br>
+    <input type="button" value="Check" onclick="checkAmount()">
+   </pre>
+
+   <script>
+    
+    
+    function checkAmount(){
+        let number1=Number(document.getElementById("price").value);
+        let discount=Number(document.getElementById("discount").value);
+        let payableAmount=0;
+        
+        let limitFirst=500;
+        let limitSecond=1000;
+        let limitThird=Infinity;
+        let firstDiscount=5;
+        let secondDiscount=7;
+        let thirdDiscount=7.5;
+        if(number1<limitFirst){
+            let payableAmount = price - (price * firstDiscount / 100);
+            
+        }
+        if(number1<limitSeceond){
+            let payableAmount = price - (price * firstDiscount / 100);
+            
+            
+        }if(number1<limitThird){
+            let payableAmount = price - (price * firstDiscount / 100);
+            
+            
+        }
+        document.getElementById("payableAmount").value = payableAmount;
+
+    }
+   </script> -->
+
+   <!-- <pre>
+    <span>Price</span>
+    <input type="number" id="price"><br>
+    <span>Discount</span>
+    <input type="number" id="discount"><br>
+    <span>Payable Amount</span>
+    <input type="number" id="payableAmount"><br>
+    <input type="button" value="Check" onclick="checkAmount()">
+</pre>
+
+<script>
+    function checkAmount() {
+        let price = Number(document.getElementById("price").value);
+        let discount = Number(document.getElementById("discount").value);
+        let payableAmount = 0;
+        
+        let limitFirst = 500;
+        let limitSecond = 1000;
+        let limitThird = Infinity;
+        let firstDiscount = 5;
+        let secondDiscount = 7;
+        let thirdDiscount = 7.5;
+        
+        if (price <= limitFirst) {
+            payableAmount = price - (price * firstDiscount / 100);
+        }
+        if (price <= limitSecond) {
+            payableAmount = price - (price * secondDiscount / 100);
+        }
+        if (price <= limitThird) {
+            payableAmount = price - (price * thirdDiscount / 100);
+        }
+        
+        document.getElementById("payableAmount").value = payableAmount;
+    } -->
+
+    <!-- <pre>
+        <span>Price</span>
+        <input type="number" id="price"><br>
+        <span>Discount</span>
+        <input type="number" id="discount"><br>
+        <span>Payable Amount</span>
+        <input type="number" id="payableAmount"><br>
+        <span>Unit Price</span>
+        <input type="number" id="unitprice" ><br>
+        <span>Quantity</span>
+        <input type="number" id="quantity" ><br>
+        <input type="button" value="Check" onclick="checkAmount()">
+    </pre>
+    
+    <script>
+        function checkAmount() {
+            let price = Number(document.getElementById("price").value);
+            let discount = 0;
+            
+            if (price <= 500) {
+                discount = 5;
+            } else if (price <= 1000) {
+                discount = 7;
+            } else {
+                discount = 7.5;
+            }
+            
+            let payableAmount = price - (price * discount / 100);
+            let unitPrice = Number(document.getElementById("unitprice").value);
+            let quantity = Number(document.getElementById("quantity").value);
+            unitResult= unitPrice*quantity;
+            
+            document.getElementById("discount").value = discount;
+            document.getElementById("payableAmount").value = payableAmount;
+            document.getElementById("unitprice").value = unitResult;
+            document.getElementById("quantity").value = quantity;
+        }
+    </script> -->
+
+    <pre>
+        <span>Price</span>
+        <input type="number" id="price"><br>
+        <span>Discount</span>
+        <input type="number" id="discount"><br>
+        <span>Payable Amount</span>
+        <input type="number" id="payableAmount"><br>
+        <span>Unit Price</span>
+        <input type="number" id="unitprice" ><br>
+        <span>Quantity</span>
+        <input type="number" id="quantity" oninput="calculateUnitPrice()"><br>
+        <input type="button" value="Check" onclick="checkAmount()">
+    </pre>
+    
+    <script>
+        function checkAmount() {
+            let price = Number(document.getElementById("price").value);
+            let discount = 0;
+            
+            if (price <= 500) {
+                discount = 5;
+            } else if (price <= 1000) {
+                discount = 7;
+            } else {
+                discount = 7.5;
+            }
+            
+            let payableAmount = price - (price * discount / 100);
+            let unitPrice = Number(document.getElementById("unitprice").value);
+            let quantity = Number(document.getElementById("quantity").value);
+            let unitResult = unitPrice * quantity;
+            
+            document.getElementById("discount").value = discount;
+            document.getElementById("payableAmount").value = payableAmount;
+            document.getElementById("unitprice").value = unitPrice;
+            document.getElementById("quantity").value = quantity;
+        }
+        
+        function calculateUnitPrice() {
+            let unitPrice = Number(document.getElementById("price").value);
+            let quantity = Number(document.getElementById("quantity").value);
+            let unitResult = price * quantity;//unitprice will be price
+            document.getElementById("unitprice").value = unitResult;
+        }
+    </script>
+    
+    
+
+
+</body>
+</html>

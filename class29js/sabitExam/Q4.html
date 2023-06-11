@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<body>
+    <pre>
+        <span>First Number</span>
+        <input type="number" id="number1"><br>
+        <span>Second Number</span>
+        <input type="number" id="number2"><br>
+        <span>Third Number</span>
+        <input type="number" id="number3"><br>
+        <input type="button" value="check" onclick="checkMaxMin()">
+        </pre>
+    
+        <script>
+            function checkMaxMin(){
+                let firstNumber=parseInt(document.getElementById("number1").value);
+                let secondNumber=parseInt(document.getElementById("number2").value);
+                let thirdNumber=parseInt(document.getElementById("number3").value);
+    
+                if(isNaN(firstNumber)||isNaN(secondNumber)||isNaN(thirdNumber)){
+                    alert("Please Enter a Valid Number");
+                }
+                else{
+                    let maxNumber= Math.max(firstNumber,secondNumber,thirdNumber);
+                    let minNumber= Math.min(firstNumber,secondNumber,thirdNumber);
+                    alert("maximum number is "+maxNumber);
+                    alert("minumum number is "+ minNumber);
+    
+                    }
+    
+                }
+            
+        </script>
+</body>
+</html>

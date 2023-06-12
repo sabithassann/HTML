@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <form id="formSubmit">
+            <span>Name</span>
+            <input type="text" id="name">
+            <span>Contact</span>
+            <input type="text" id="contact">
+            <span>Remarks</span>
+            <textarea id="remarks" cols="18" rows="4"></textarea>
+            <span>Gender</span>
+            <input type="radio" value="Male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female
+            <span>Hobby</span>
+            <input type="checkbox" value="Traveling">Traveling
+            <input type="checkbox" value="Writing">Writing
+            <input type="checkbox" value="Reading">Reading
+            <input type="checkbox" value="Swimming">Swimming
+            <span>Subject</span>
+            <select name="subject" id="subject">
+                <option value="none">--select subject--</option>
+                <option value="jee">JEE</option>
+                <option value="Html">HTML</option>
+                <option value="Css">CSS</option>
+            </select>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </pre>
+    
+    <script>
+        function dataTransfer(event) {
+            event.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            const contact = document.getElementById("contact").value;
+            const remarks = document.getElementById("remarks").value;
+            const subject = document.getElementById("subject").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const hobbies = document.querySelectorAll('input[type="checkbox"]:checked');
+            let hobbyList = [];
+    
+            hobbies.forEach(function (hobbies) {
+                hobbyList.push(hobbies.value);
+            });
+    
+            var output = "Name: " + name + "<br>";
+            output += "Contact: " + contact + "<br>";
+            output += "Remarks: " + remarks + "<br>";
+            output += "Gender: " + gender + "<br>";
+            output += "Subject: " + subject + "<br>";
+            output += "Hobbies: " + hobbyList.join(", ") + "<br>";
+    
+            var newWindow = window.open('', '_blank');
+            newWindow.document.write('<pre>' + output + '</pre>');
+        }
+    
+        let form = document.getElementById('formSubmit');
+        form.addEventListener('submit', dataTransfer);
+    </script>
+    
+</body>
+</html>

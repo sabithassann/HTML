@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myArr = [];
+        for (let i = 1; i <= 5; i++) {
+            let input = prompt("Pls enter " + i + " Number: ");
+            myArr.push(input);
+        }
+        //     myArr.sort(function(a, b) {
+        //     return a - b;
+        //    })
+        // for(let i=0; i<myArr.length-1;i++){
+        //     for(let j=0;j<myArr.length-i-1;j++){
+        //         if(myArr[j]>myArr[j+1]){
+        //             let temp=myArr[j];
+        //             myArr[j]=myArr[j+1];
+        //             myArr[j+1]=temp;
+        //         }
+        // Sorting using a for loop
+        for (let i = 0; i < myArr.length - 1; i++) {
+            for (let j = 0; j < myArr.length - i - 1; j++) {
+                if (myArr[j] > myArr[j + 1]) {
+                    // Swap elements
+                    let temp = myArr[j];
+                    myArr[j] = myArr[j + 1];
+                    myArr[j + 1] = temp;
+                }
+
+            }
+
+        }
+
+        //     for (let i = 0; i < myArr.length - 1; i++) {
+        //     for (let j = 0; j < myArr.length - i - 1; j++) {
+        //     if (myArr[j] > myArr[j + 1]) {
+        //       // Swap elements
+        //       let temp = myArr[j];
+        //       myArr[j] = myArr[j + 1];
+        //       myArr[j + 1] = temp;
+        //     }
+        //   }
+        // }
+        document.write(myArr);
+    </script>
+</body>
+
+</html>

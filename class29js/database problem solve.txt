@@ -1,0 +1,48 @@
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Sun Jun 11 12:43:16 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Enter user-name: as sysdba
+Enter user-name: admin
+Enter password:
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> alter session set container=orclpdb;
+
+Session altered.
+
+SQL> select name open_mode from v$pdbs;
+
+OPEN_MODE
+--------------------------------------------------------------------------------
+ORCLPDB
+
+SQL> alter user hr identified by hr account unlock;
+alter user hr identified by hr account unlock
+*
+ERROR at line 1:
+ORA-01109: database not open
+
+
+SQL> select name open_mode from v$pdbs;
+
+OPEN_MODE
+--------------------------------------------------------------------------------
+ORCLPDB
+
+SQL> alter pluggable database open;
+
+Pluggable database altered.
+
+SQL> alter user hr identified by hr account unlock;
+
+User altered.
+
+SQL> conn hr/hr@orclpdb;
+Connected.
+SQL>

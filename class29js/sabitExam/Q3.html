@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    <span>N=</span>
+    <input type="number" id="show">
+    <input type="button" value="Check" onclick="showValue()"><br>
+    <span id="showResult"></span>
+
+    <script>
+        function showValue(){
+            let inputValue=parseInt(document.getElementById("show").value)
+            if(isNaN(inputValue)){
+            alert("please Enter a Value");
+        }
+        else{
+            let result=1;
+            for(i=inputValue;i>=1;i--){
+                result*=i;
+                document.getElementById("showResult").innerHTML="Factorial Number is "+result;
+            }
+        }
+        }
+    </script>
+</body>
+</html>

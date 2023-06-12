@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+    <pre>
+    <span>Price</span>
+    <input type="number" id="price" ><br>
+    <span>Discount Percentage</span>
+    <input type="number" id="discount" oninput="calculatePrice()">
+    <span>Current Price</span>
+    <input type="number" id="currentPrice">
+    </pre>
+
+    <script>
+
+        function calculatePrice(){
+            let price=Number(document.getElementById("price").value);
+            let discount=Number(document.getElementById("discount").value)
+            let currentPrice=price -(price*discount/100);
+
+            document.getElementById("currentPrice").value=currentPrice;
+        }
+
+    </script>
+</body>
+</html>

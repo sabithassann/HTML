@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+         span.color{
+            color: red;
+        }
+        span.colorc{
+          color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Email Address</span>
+    <input type="button" value="Check" onclick="checkEmail()"><br><br>
+    <span class="color" id="markColor"></span>
+    <span class="colorc" id="markColorc"></span>
+
+    <script>
+        function checkEmail() {
+            const email = prompt("Please enter your email address:");
+            const markColor = document.getElementById("markColor");
+            const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!regEx.test(email)) {
+                markColor.innerHTML = "Email Address is Wrong" + "<br>";
+            } else {
+                markColorc.innerHTML = "Email Address is correct" + "<br>";
+            }
+        }
+    </script>
+</body>
+
+</html>

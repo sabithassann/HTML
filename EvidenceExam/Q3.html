@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+
+<body>
+    <span>Check Prime:</span>
+    <input type="number" id="number">
+    <input type="button" value="Check" onclick="checkPrime()"><br><br>
+    <span id="prime"></span>
+
+    <script>
+        function checkPrime() {
+            let numberEnter = parseInt(document.getElementById("number").value);
+            let count = 0;
+
+            if (isNaN(numberEnter)) {
+                console.log("Please enter a valid number.");
+            } else {
+                for (let i = 1; i <= numberEnter; i++) {
+                    if (numberEnter % i === 0) {
+                        count++;
+                    }
+                }
+
+                if (count === 2) {
+                    document.getElementById("prime").innerHTML =  "<b>" + numberEnter + "</b> is a prime number.";
+                } else {
+                    document.getElementById("prime").innerHTML = "<b>" + numberEnter + "</b> is <b>not</b> a prime number.";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

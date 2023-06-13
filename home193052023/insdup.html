@@ -8,23 +8,26 @@
 </head>
 <body>
     <script>
-                let myArr = [];
-for (let i = 1; i <= 5; i++) {
-  let input = prompt("Please enter number " + i + ": ");
-  myArr.push(Number(input));
+     let myArr = [];
+    //  let sum=0;
+     for (let i = 1; i <= 5; i++){
+     let input = parseInt(prompt("Please enter number " + i + ": "));
+     myArr.push(Number(input));
+    // sum +=input;
 }
 
-for (let i = 0; i < myArr.length - 1; i++) {
-  for (let j = 0; j < myArr.length - i - 1; j++) {
-    if (myArr[j] > myArr[j + 1]) {
-      let temp = myArr[j];
-      myArr[j] = myArr[j + 1];
-      myArr[j + 1] = temp;
-    }
-  }
-}
+// for (let i = 0; i < myArr.length - 1; i++) {
+//   for (let j = 0; j < myArr.length - i - 1; j++) {
+//     if (myArr[j] > myArr[j + 1]) {
+//       let temp = myArr[j];
+//       myArr[j] = myArr[j + 1];
+//       myArr[j + 1] = temp;
+//     }
+//   }
+// }
 
-document.write(myArr);
+// document.write(myArr);
+// document.write(sum);
 
 
     </script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label >Number 1</label>
+    <input type="text" id="n1"> <br>
+    <label >Number 2</label>
+    <input type="text" id="n2"> <br>
+
+    <button onclick="findMaxNumber()">Max Number</button> 
+    <button onclick="findMinNumber()">Min Number</button> 
+    <br>
+    <span id="result"></span>
+
+<script>
+    function findMaxNumber(){
+        let n1=document.getElementById("n1").value;
+        let n2=document.getElementById("n2").value;
+        // let result=0;
+
+        if(n3>n2 && n3>n1){
+            document.getElementById("result").innerHTML="Max No is "+n2;
+        }
+
+        else{
+            document.getElementById("result").innerHTML="Max No is "+n1;
+        }
+
+    }
+    
+    function findMinNumber(){
+        let n1=document.getElementById("n1").value;
+        let n2=document.getElementById("n2").value;
+        // let result=0;
+
+        if(n1<n2){
+            document.getElementById("result").innerHTML="Min No is "+n1;
+        }
+        else{
+            document.getElementById("result").innerHTML="Min No is "+n2;
+        }
+
+    }
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label>Number1</label>
+    <textarea cols="4" rows="1" id="n1"></textarea>
+
+    <label>Number2</label>
+    <textarea cols="4" rows="1" id="n2"></textarea>
+
+    <label>Number3</label>
+    <textarea cols="4" rows="1" id="n3"></textarea>
+
+    <br>
+    <button onclick="findMaxNumber()">Max num</button>
+    <button onclick="findMinNumber()">Max num</button>
+    <br>
+
+    <span id="result"> </span>
+
+    <script>
+
+        function findMaxNumber() {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            let n3 = document.getElementById("n3").value;
+
+            if (n1 > n2 && n1 > n3) {
+                document.getElementById("result").innerHTML = "Max no is " + n1;
+            }
+            else if(n2 > n1 && n2 > n3){
+              document.getElementById("result").innerHTML="Max no is "+n2;
+            }
+            else {
+                document.getElementById("result").innerHTML = "Mix no is " + n3;
+            }
+        }
+
+        function findMinNumber() {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            let n3 = document.getElementById("n3").value;
+
+            if (n1 < n2 && n1< n3) {
+                document.getElementById("result").innerHTML = "Min no is " + n1;
+            }
+            else if (n2 < n1 && n2 < n3 ){
+                    document.getElementById("result").innerHTML="Min no is "+ n2;               
+            }
+            else {
+                document.getElementById("result").innerHTML = "Min no is " + n3;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

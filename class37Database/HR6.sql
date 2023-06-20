@@ -175,6 +175,7 @@ from employees
 where first_name='Clara')
 
 AND Not first_name='Clara';
+AND  first_name!='Clara';
 
 and first_name<> 'clara';
 
